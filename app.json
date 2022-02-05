@@ -1,5 +1,5 @@
 {
-    "name": "Heroku VPS 24/7 #HiroKu",
+    "name": "ONNOYUKIHIRO #HiroKu",
     "description": "Deploy noVNC to Heroku.",
     "keywords": [
         "VNC",
@@ -9,6 +9,6 @@
     "env": {},
     "website": "",
     "repository": "https://github.com/kopisusi/enak.git",
-    "logo": "https://raw.githubusercontent.com/kopisusi/enak/main/58480873cef1014c0b5e48ea.png",
+    "logo": "https://raw.githubusercontent.com/kopisusi/pait/main/58480873cef1014c0b5e48ea.png",
     "stack": "container"
 }
