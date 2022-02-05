@@ -43,9 +43,6 @@ RUN apt-get -qqy update \
     && apt-add-repository ppa:remmina-ppa-team/remmina-next \
     && apt update \
     && apt install -qqy --no-install-recommends remmina remmina-plugin-rdp remmina-plugin-secret \
-    && apt-add-repository ppa:obsproject/obs-studio \
-    && apt update \
-    && apt install -qqy --no-install-recommends obs-studio \
     && apt install unzip \
     && apt-get autoclean \
     && apt-get autoremove \
@@ -65,7 +62,7 @@ ENV SCREEN_WIDTH=1280 \
     SCREEN_DPI=96 \
     DISPLAY=:99 \
     DISPLAY_NUM=99 \
-    UI_COMMAND=/usr/bin/startxfce4
+    UI_COMMAND=/usr/bin/startlxde
 
 # RUN apt-get update -qqy \
 #     && apt-get -qqy install \
@@ -73,7 +70,7 @@ ENV SCREEN_WIDTH=1280 \
 
 RUN apt-get update -qqy \
     && apt-get -qqy install --no-install-recommends \
-        dbus-x11 xfce4 \
+        dbus-x11 lxde \
     && apt-get autoclean \
     && apt-get autoremove \
     && rm -rf /var/lib/apt/lists/* /var/cache/apt/*
